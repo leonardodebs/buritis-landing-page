@@ -31,8 +31,23 @@ jobs:
       - name: Build
         run: bun run build
 
-      - name: Move client to root
-        run: mv dist/client/* dist/
+      - name: Create index.html
+        run: |
+          cat > dist/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="pt-BR">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Buritis Restaurante - Self-Service em Goiânia</title>
+            <link rel="stylesheet" href="./assets/styles.css">
+          </head>
+          <body>
+            <div id="root"></div>
+            <script type="module" src="./assets/index.js"></script>
+          </body>
+          </html>
+          EOF
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
