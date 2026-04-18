@@ -31,8 +31,8 @@ jobs:
       - name: Build
         run: bun run build
 
-      - name: Copy index.html to root
-        run: cp dist/index.html dist/
+      - name: Move client to root
+        run: mv dist/client/* dist/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
