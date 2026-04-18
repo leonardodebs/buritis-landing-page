@@ -17,7 +17,7 @@ export function Footer() {
               />
             </div>
             <p className="text-sm uppercase tracking-[0.2em] text-background/60 mb-3">
-              Restaurante · Unidade Centro
+              Restaurante
             </p>
             <p className="text-background/70 text-sm leading-relaxed">
               "O Restaurante da Família" — tradição em comida caseira,

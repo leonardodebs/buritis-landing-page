@@ -33,13 +33,7 @@ export function Navbar() {
               className="h-full w-full object-cover"
             />
           </div>
-          <span
-            className={`text-xs uppercase tracking-widest hidden sm:inline ${
-              scrolled ? "text-muted-foreground" : "text-white/80"
-            }`}
-          >
-            Unidade Centro
-          </span>
+
         </Link>
         <div className="hidden md:flex items-center gap-8">
           {[
