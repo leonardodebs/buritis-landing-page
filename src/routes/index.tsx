@@ -1,26 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/landing/Navbar";
+import { Hero } from "@/components/landing/Hero";
+import { Highlights } from "@/components/landing/Highlights";
+import { Info } from "@/components/landing/Info";
+import { Testimonials } from "@/components/landing/Testimonials";
+import { Footer } from "@/components/landing/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      {
+        title: "Buritis Restaurante Centro · Self-Service em Goiânia",
+      },
+      {
+        name: "description",
+        content:
+          "Buffet self-service com churrasco, peixes grelhados e comida caseira no Centro de Goiânia. Alameda dos Buritis, 238.",
+      },
+      { property: "og:title", content: "Buritis Restaurante · Centro de Goiânia" },
+      {
+        property: "og:description",
+        content:
+          "Churrasco na brasa, peixes grelhados e buffet completo. Tradição em Goiânia.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main>
+      <Navbar />
+      <Hero />
+      <Highlights />
+      <Info />
+      <Testimonials />
+      <Footer />
+    </main>
+  );
 }
