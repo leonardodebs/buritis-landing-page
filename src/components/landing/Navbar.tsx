@@ -21,20 +21,26 @@ export function Navbar() {
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between px-5 py-4">
-        <Link to="/" className="flex items-center gap-2">
-          <span
-            className={`font-display text-2xl font-bold ${
-              scrolled ? "text-primary" : "text-white"
+        <Link to="/" className="flex items-center gap-3">
+          <div
+            className={`rounded-full overflow-hidden bg-white transition-all duration-300 ${
+              scrolled ? "h-11 w-11 shadow-sm" : "h-12 w-12 ring-2 ring-white/40"
             }`}
           >
-            Buritis
-          </span>
+            <img
+              src={logo}
+              alt="Logotipo Buritis Restaurante"
+              width={96}
+              height={96}
+              className="h-full w-full object-cover"
+            />
+          </div>
           <span
-            className={`text-xs uppercase tracking-widest ${
+            className={`text-xs uppercase tracking-widest hidden sm:inline ${
               scrolled ? "text-muted-foreground" : "text-white/80"
             }`}
           >
-            Centro
+            Unidade Centro
           </span>
         </Link>
         <div className="hidden md:flex items-center gap-8">
