@@ -4,7 +4,6 @@ import { Hero } from "@/components/landing/Hero";
 import { Highlights } from "@/components/landing/Highlights";
 import { Menu } from "@/components/landing/Menu";
 import { About } from "@/components/landing/About";
-import { Gallery } from "@/components/landing/Gallery";
 import { Info } from "@/components/landing/Info";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { Footer } from "@/components/landing/Footer";
@@ -83,7 +82,6 @@ function Index() {
       <Highlights />
       <Menu />
       <About />
-      <Gallery />
       <Info />
       <Testimonials />
       <Footer />

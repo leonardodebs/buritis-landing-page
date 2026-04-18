@@ -29,14 +29,21 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Buritis Restaurante - Self-Service em Goiânia" },
+      {
+        name: "description",
+        content:
+          "Buffet self-service com churrasco, peixes grelhados e comida caseira no Centro de Goiânia.",
+      },
+      { name: "author", content: "Buritis Restaurante" },
+      { property: "og:title", content: "Buritis Restaurante - Self-Service em Goiânia" },
+      {
+        property: "og:description",
+        content: "Churrasco na brasa, peixes grelhados e buffet completo. Tradição em Goiânia.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@buritisrestaurante" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

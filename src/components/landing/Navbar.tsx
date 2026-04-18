@@ -45,7 +45,6 @@ export function Navbar() {
           {[
             { label: "Cardápio", href: "#cardapio" },
             { label: "Sobre", href: "#sobre" },
-            { label: "Galeria", href: "#galeria" },
             { label: "Avaliações", href: "#avaliacoes" },
           ].map((item) => (
             <a
