@@ -1,4 +1,5 @@
 import { Instagram, Phone, MapPin, Clock } from "lucide-react";
+import logo from "@/assets/logo-buritis.jpg";
 
 export function Footer() {
   return (
@@ -6,13 +7,21 @@ export function Footer() {
       <div className="container mx-auto px-5">
         <div className="grid md:grid-cols-3 gap-10 mb-12">
           <div>
-            <h3 className="font-display text-3xl font-bold mb-2">Buritis</h3>
-            <p className="text-sm uppercase tracking-[0.2em] text-background/60 mb-4">
+            <div className="h-20 w-20 rounded-full overflow-hidden bg-white mb-4">
+              <img
+                src={logo}
+                alt="Logotipo Buritis Restaurante"
+                width={96}
+                height={96}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <p className="text-sm uppercase tracking-[0.2em] text-background/60 mb-3">
               Restaurante · Unidade Centro
             </p>
             <p className="text-background/70 text-sm leading-relaxed">
-              Tradição em comida caseira, churrasco e peixes no coração de
-              Goiânia.
+              "O Restaurante da Família" — tradição em comida caseira,
+              churrasco e peixes no coração de Goiânia.
             </p>
           </div>
 
